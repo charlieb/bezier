@@ -40,7 +40,6 @@ def subdiv(bzs, flat):
         for bz in bzs:
             #print('max_dist: %s > %s'%(compute_max_distance(bz), flat))
             if compute_max_distance(bz) > flat:
-                print('split')
                 next_bzs.extend(beziersplitatt(bz, 0.5))
                 all_flat = False
             else:
